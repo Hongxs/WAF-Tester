@@ -1,0 +1,37 @@
+ifconfig 
+netstat 
+hostname 
+host 
+nslookup 
+nc -l
+ping 192.168.16.16
+groupadd -o
+groupdel 
+groupmod -o
+useradd -o
+userdel 
+usermod -o
+passwd 
+more 
+less 
+|grep 
+sed 
+echo "xxx">
+shutdown -h now
+reboot 
+logout 
+net user
+net localgroup
+net start
+net stop
+copy
+move
+fgets
+file_get_contents
+file_put_contents
+call_user_func
+gzcompress
+gzencode
+gzread
+session_start
+scandir
