@@ -18,7 +18,7 @@ def send_req_get(url,params=None,headers=None):
         except urllib2.HTTPError,e:
                 res = e.code
 				pass
-				
+		
         return res
 
 def send_req_post(url,params=None,headers=None):
@@ -34,7 +34,7 @@ def send_req_post(url,params=None,headers=None):
 	except urllib2.HTTPError,e:
 		res = e.code
 		pass
-		
+
 	return res
 
 def randomIP():
