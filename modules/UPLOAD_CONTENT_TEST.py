@@ -42,10 +42,10 @@ def check_upload_usecase(filepath,domain,method,i):
 	res = check_usecase("/search.php",method,upload_data,req_headers,domain)
 	
 	if res == 403:
-                print i,":",res,"   usecase:",info
+                print i,":",res,"   usecase:",filepath
         else:
                 print '\033[1;31;40m'
-                print i,":",res,"   usecase:",info
+                print i,":",res,"   usecase:",filepath
                 print '\033[0m'	
 
 def UPLOAD_CONTENT_TEST(domain,method,usecase):
