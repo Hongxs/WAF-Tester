@@ -18,6 +18,7 @@ def generate_data(boundary,filename):
 #       fr=open(r'/var/qr/b.png','rb')
         data.append('Content-Disposition: form-data; name="profile"; filename="%s"' % filename)
         data.append('Content-Type: %s\r\n' % 'image/png')
+	data.append('testtesttest!')
 #       data.append(fr.read())
 #       fr.close()
         data.append('--%s--\r\n' % boundary)
@@ -31,7 +32,7 @@ def check_upload_usecase(info,domain,method,i):
 	boundary = '----------%s' % hex(int(time.time() * 1000))
 	data = generate_data(boundary,info)
 	upload_data = '\r\n'.join(data)
-#	print upload_data
+	#print upload_data
 	req_headers = {"Content-Type": "multipart/form-data; boundary=%s" % boundary,
 			"User-Agent":"Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6"}
 	res = check_usecase("/search.php",method,upload_data,req_headers,domain)
@@ -43,7 +44,7 @@ def check_upload_usecase(info,domain,method,i):
 	else:
 		print i,":",res,"   usecase:",info	
 
-def UPLOAD_TEST(domain,method,usecase):
+def UPLOAD_EXT_TEST(domain,method,usecase):
 	upload_file = open(usecase)
 	file_content_lines = upload_file.readlines()
 	upload_file.close()
