@@ -37,12 +37,12 @@ def check_upload_usecase(info,domain,method,i):
 			"User-Agent":"Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6"}
 	res = check_usecase("/search.php",method,upload_data,req_headers,domain)
 	
-	if res == 200:
+	if res == 403:
+		print i,":",res,"   usecase:",info
+	else:
 		print '\033[1;31;40m'
 		print i,":",res,"   usecase:",info
 		print '\033[0m'
-	else:
-		print i,":",res,"   usecase:",info	
 
 def UPLOAD_EXT_TEST(domain,method,usecase):
 	upload_file = open(usecase)

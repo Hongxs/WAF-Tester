@@ -9,12 +9,12 @@ def check_download_usecase(info,domain,i):
 	info = "/"+info
         res = check_usecase(info,method,None,None,domain)
 
-        if res == 200:
+	if res == 403:
+                print i,":",res,"   usecase:",info
+        else:
                 print '\033[1;31;40m'
                 print i,":",res,"   usecase:",info
                 print '\033[0m'
-        else:
-                print i,":",res,"   usecase:",info
 
 def DOWNLOAD_TEST(domain,method,usecase):
         download_file = open(usecase)

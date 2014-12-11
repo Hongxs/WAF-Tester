@@ -8,12 +8,13 @@ def check_xss_usecase(info,domain,method,i):
 #       print i,":",info
         res = check_usecase("/search.php",method,{"keyword":info},None,domain)
 #        print i,":",res,"   usecase:",info
-	if res == 200:
+
+	if res == 403:
+                print i,":",res,"   usecase:",info
+        else:
                 print '\033[1;31;40m'
                 print i,":",res,"   usecase:",info
                 print '\033[0m'
-        else:
-                print i,":",res,"   usecase:",info
 
 def XSS_TEST(domain,method,usecase):
         xss_file = open(usecase)
